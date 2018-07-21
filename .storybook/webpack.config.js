@@ -8,5 +8,11 @@ module.exports = (baseConfig, env, defaultConfig) => {
   });
   // defaultConfig.plugins.push(new TSDocgenPlugin());
   defaultConfig.resolve.extensions.push(".ts", ".tsx");
+
+  defaultConfig.resolve.alias = {
+    ...defaultConfig.resolve.alias,
+    "~": path.resolve(__dirname, "../src"),
+  };
+
   return defaultConfig;
 };

@@ -3,7 +3,7 @@
 import { storiesOf } from '@storybook/react';
 import * as React from 'react';
 
-import App from '../src/App';
+import App from '~/App';
 const Sample = () => <div>sample</div>;
 
 storiesOf('app', module).add('to Storybook', () => <App />);

@@ -1,6 +1,8 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
+import Hoge from '~/components/Hoge';
+
 import logo from './logo.svg';
 
 export default () => (
@@ -14,6 +16,7 @@ export default () => (
         To get started, edit <code>src/App.tsx</code> and save to reload.
       </p>
     </div>
+    <Hoge />
   </Styled>
 );
 
